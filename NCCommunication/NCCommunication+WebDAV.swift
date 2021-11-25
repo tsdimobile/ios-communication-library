@@ -214,12 +214,12 @@ extension NCCommunication {
     }
     
     @objc public func searchLiteral(serverUrl: String, depth: String, literal: String, showHiddenFiles: Bool, customUserAgent: String? = nil, addCustomHeaders: [String: String]? = nil, timeout: TimeInterval = 60, queue: DispatchQueue = .main, completionHandler: @escaping (_ account: String, _ files: [NCCommunicationFile], _ errorCode: Int, _ errorDescription: String) -> Void) {
-         
         let account = NCCommunicationCommon.shared.account
-        let files: [NCCommunicationFile] = []
 
         guard let href = NCCommunicationCommon.shared.encodeString("/files/" + NCCommunicationCommon.shared.userId) else {
-            queue.async { completionHandler(account, files, NSURLErrorBadURL, NSLocalizedString("_invalid_url_", value: "Invalid server url", comment: "")) }
+            queue.async {
+                completionHandler(account, [], NSURLErrorBadURL, NSLocalizedString("_invalid_url_", value: "Invalid server url", comment: ""))
+            }
             return
         }
         
@@ -277,8 +277,11 @@ extension NCCommunication {
          
         var files: [NCCommunicationFile] = []
         
-        guard let url = NCCommunicationCommon.shared.encodeStringToUrl(serverUrl + "/" + NCCommunicationCommon.shared.webDav) else {
-            queue.async { completionHandler(account, files, NSURLErrorBadURL, NSLocalizedString("_invalid_url_", value: "Invalid server url", comment: "")) }
+        guard let url = NCCommunicationCommon.shared.encodeStringToUrl(serverUrl + "/" + NCCommunicationCommon.shared.webDav)
+        else {
+            queue.async {
+                completionHandler(account, files, NSURLErrorBadURL, NSLocalizedString("_invalid_url_", value: "Invalid server url", comment: ""))
+            }
             return
         }
          

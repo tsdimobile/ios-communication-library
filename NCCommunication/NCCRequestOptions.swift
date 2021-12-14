@@ -25,13 +25,15 @@ import Foundation
 
 @objcMembers
 public class NCCRequestOptions: NSObject {
-    public init(customHeader: [String : String]? = nil, customUserAgent: String? = nil, queue: DispatchQueue = .main) {
+    let customHeader: [String: String]?
+    let customUserAgent: String?
+    let e2eToken: String?
+    let queue: DispatchQueue
+
+    public init(customHeader: [String: String]? = nil, customUserAgent: String? = nil, e2eToken: String? = nil, queue: DispatchQueue = .main) {
         self.customHeader = customHeader
         self.customUserAgent = customUserAgent
+        self.e2eToken = e2eToken
         self.queue = queue
     }
-
-    let customHeader: [String:String]?
-    let customUserAgent: String?
-    let queue: DispatchQueue
 }

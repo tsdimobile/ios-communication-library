@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A46197C27BE2B680042D595 /* NCCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A46197B27BE2B680042D595 /* NCCError.swift */; };
 		F70A5247256AF8D10017B506 /* NCCommunication+UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A5246256AF8D10017B506 /* NCCommunication+UserStatus.swift */; };
 		F72A25D92590E3B0009740EC /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A25D82590E3B0009740EC /* UIImage+Extensions.swift */; };
 		F72E160D2478105D00678FBE /* NCCommunication+E2EE.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72E160C2478105D00678FBE /* NCCommunication+E2EE.swift */; };
@@ -28,7 +29,6 @@
 		F7BBE0002472F42200C3B0E2 /* NCCommunication+Richdocuments.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBDFFF2472F42200C3B0E2 /* NCCommunication+Richdocuments.swift */; };
 		F7D0A5382477C37C002F2164 /* NCCommunication+PushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0A5372477C37C002F2164 /* NCCommunication+PushNotification.swift */; };
 		F7EC2DDD2372FBC0008E28EF /* NCCommunicationBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EC2DDC2372FBC0008E28EF /* NCCommunicationBackground.swift */; };
-		F7FE196E23757BEB001465E3 /* NCCommunicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FE196D23757BEB001465E3 /* NCCommunicationError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A46197B27BE2B680042D595 /* NCCError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCCError.swift; sourceTree = "<group>"; };
 		F70A5246256AF8D10017B506 /* NCCommunication+UserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NCCommunication+UserStatus.swift"; sourceTree = "<group>"; };
 		F72A25D82590E3B0009740EC /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		F72E160C2478105D00678FBE /* NCCommunication+E2EE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NCCommunication+E2EE.swift"; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 		F74D5C2C235DE83B0006DA38 /* NCCommunication */ = {
 			isa = PBXGroup;
 			children = (
+				7A46197B27BE2B680042D595 /* NCCError.swift */,
 				F74D5C2D235DE83B0006DA38 /* NCCommunication.h */,
 				F74D5C44235DE8F80006DA38 /* NCCommunication.swift */,
 				F7EC2DDC2372FBC0008E28EF /* NCCommunicationBackground.swift */,
@@ -274,12 +276,12 @@
 				F74D5C48235DE8F80006DA38 /* NCCommunication.swift in Sources */,
 				F7BBE0002472F42200C3B0E2 /* NCCommunication+Richdocuments.swift in Sources */,
 				F72E160D2478105D00678FBE /* NCCommunication+E2EE.swift in Sources */,
+				7A46197C27BE2B680042D595 /* NCCError.swift in Sources */,
 				F74AA2542464034500DD13B1 /* NCCommunication+NCText.swift in Sources */,
 				F7EC2DDD2372FBC0008E28EF /* NCCommunicationBackground.swift in Sources */,
 				F73B422E24767E0B00A30FD3 /* NCCommunication+Comments.swift in Sources */,
 				F70A5247256AF8D10017B506 /* NCCommunication+UserStatus.swift in Sources */,
 				F7D0A5382477C37C002F2164 /* NCCommunication+PushNotification.swift in Sources */,
-				F7FE196E23757BEB001465E3 /* NCCommunicationError.swift in Sources */,
 				F754C06E24977C8C00051563 /* NCCommunication+Share.swift in Sources */,
 				F74AA256246404CD00DD13B1 /* NCCommunication+Login.swift in Sources */,
 				F76138EA246415BC002C8771 /* NCCommunication+WebDAV.swift in Sources */,
